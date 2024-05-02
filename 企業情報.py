@@ -6,7 +6,7 @@ import os
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def get_company_info(company_name):
-    # プロンプトを日本語で記述
+    # プロンプトを日本語で記述ｓ
     prompt = f"{company_name}について詳細な情報を教えてください。次の詳細を含めてください：\n- 資本金\n- 売上\n- 従業員数\n- 業務内容（約300字）\n- DXの取り組み状況（約300字）\n- 業務内容とDXの取り組み状況を踏まえたAI活用の提案（約300字）"
     
     response = openai.ChatCompletion.create(
